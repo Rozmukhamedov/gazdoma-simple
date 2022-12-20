@@ -43,6 +43,11 @@
     margin: 16px 0;
 }
 
+.profile .profile__box h5 a{
+    text-decoration: none;
+    color: #333333;
+}
+
 .profile .profile__box p {
     font-family: 'Roboto';
     font-style: normal;

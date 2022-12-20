@@ -16,7 +16,7 @@ function App() {
             <Route index element={<Home />} />
             <Route element={<PrivateRouter />}>
               <Route path="profile" element={<Profile />} />
-              <Route path="profile/edit" element={<Edit />} />
+              <Route path="profile/edit/:id/" element={<Edit />} />
               <Route path="equipment" element={<Equipment />}></Route>
               <Route path="dispatcher" element={<Dispatcher />}></Route>
             </Route>
