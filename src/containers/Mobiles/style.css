@@ -1,0 +1,31 @@
+.mobiles h1 {
+    font-family: 'Puritan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    color: #333333;
+    margin-top: 60px;
+}
+
+.mobiles .mobiles__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.mobiles .mobiles__flex .mobiles__flex-1 img {
+    margin: 80px 0;
+}
+
+.mobiles .mobiles__flex .mobiles__flex-1 img:first-child {
+    margin-top: 0;
+}
+
+.mobiles .mobiles__flex .mobiles__flex-2 {
+    padding: 300px 0 0 0;
+}
+
+.mobiles .mobiles__flex .mobiles__flex-2 img {
+    margin: 80px 0;
+}

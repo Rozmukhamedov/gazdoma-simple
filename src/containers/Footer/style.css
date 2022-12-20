@@ -1,0 +1,126 @@
+.footer {
+    padding: 48px;
+    background: #D5D9E1;
+}
+
+.footer .footer__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.footer .footer__logo img {
+    margin-right: 24px;
+}
+
+.footer .footer__logo h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.footer p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.footer .gmail {
+    margin-top: 40px;
+}
+
+.footer .gmail a {
+    text-decoration: none;
+    color: #027CE4;
+}
+
+.footer h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 24px;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.footer .footer__second p {
+    margin-bottom: 12px;
+}
+
+.footer .footer__icons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.footer .footer__icons .footer__icon {
+    background: #ffffff;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.footer .button_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333333;
+    border-radius: 20px;
+    width: 147px;
+    padding: 5px 0;
+    margin-bottom: 12px;
+}
+
+.footer .button_1 p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333333;
+    margin-left: 15px;
+}
+
+.footer .button_2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333333;
+    border-radius: 20px;
+    width: 147px;
+    padding: 5px 0;
+}
+
+.footer .button_2 p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333333;
+    margin-left: 15px;
+}
+
+.footer .copyright {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #A7A7AB;
+    margin-top: 40px;
+}

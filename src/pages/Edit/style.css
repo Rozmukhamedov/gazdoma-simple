@@ -1,0 +1,86 @@
+.login {
+    padding: 80px 0;
+    display: inline-block;
+}
+
+.login h1 {
+    font-family: 'Puritan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    color: #333333;
+    margin-bottom: 48px;
+}
+
+.login .login__form {
+    background: #FFFFFF;
+    box-shadow: 0px 8px 18px rgba(51, 51, 51, 0.15);
+    border-radius: 32px;
+    padding: 32px;
+}
+
+.login .login__form h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    margin-bottom: 22px;
+}
+
+.login .login__form input {
+    margin-bottom: 16px;
+    background: #F2F4F9;
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #AAAEB6;
+    height: 54px;
+}
+
+.login .login__form .login__btn {
+    width: 100%;
+    height: auto;
+    background: #F2F4F9;
+    border-radius: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    padding: 14px;
+    border: none;
+}
+
+.login .login__form .btn {
+    width: 100%;
+    height: auto;
+    background: none;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+}
+
+.login .login__form .btn a {
+    text-decoration: none;
+    color: #4673EC;
+}
