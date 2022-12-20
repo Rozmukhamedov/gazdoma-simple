@@ -1,0 +1,37 @@
+.equipment {
+    padding: 40px 0;
+}
+
+.equipment h1 {
+    font-family: 'Puritan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    color: #333333;
+    margin-bottom: 38px;
+}
+
+.equipment .message {
+    background: #FCDAD0;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+}
+
+.equipment .message img {
+    margin-right: 7px;
+}
+
+.equipment .message p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #E21D1D;
+}

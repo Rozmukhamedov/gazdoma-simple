@@ -5,7 +5,7 @@ import { IconSearch } from "@tabler/icons";
 import { ReactComponent as EditIcon } from "../../assets/images/edit_icon.svg";
 import { ReactComponent as UploadIcon } from "../../assets/images/upload.svg";
 
-function DispatTable() {
+function DispatTable({ data }: any) {
   return (
     <div className="dispatch__table">
       <h4>Пользователи</h4>
@@ -22,28 +22,30 @@ function DispatTable() {
             <th>Адрес</th>
             <th className="name">ФИО</th>
             <th>№ датчика</th>
-            <th className="edit"></th>
-            <th className="dowload"></th>
+            {/* <th className="edit"></th>
+            <th className="dowload"></th> */}
             <th className="disabled"></th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>
-              Москва, <br /> Ленина, д. 35, оф. 404
-            </td>
-            <td className="name">Майборода Дмитрий Павлович</td>
-            <td>9287523</td>
-            <td className="edit">
-              <EditIcon />
-            </td>
-            <td className="dowload">
-              <UploadIcon />
-            </td>
-            <td className="disabled">
-              <Switch size="md" color="green" />
-            </td>
-          </tr>
+          {data?.map((user: any) => (
+            <tr key={user?.id}>
+              <td>
+                {user?.address}
+              </td>
+              <td className="name">{user?.last_name} <br /> {user?.first_name} {user?.middle_name}</td>
+              <td>{user?.index}</td>
+              {/* <td className="edit">
+                <EditIcon />
+              </td>
+              <td className="dowload">
+                <UploadIcon />
+              </td> */}
+              <td className="disabled">
+                <Switch size="md" color="green" />
+              </td>
+            </tr>
+          ))}
         </tbody>
       </Table>
     </div>

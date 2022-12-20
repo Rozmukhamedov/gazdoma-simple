@@ -1,7 +1,7 @@
 import { useQuery } from "react-query";
 import { request } from "../../services/api";
 
-export const useGetDevices = ({
+export const useGetDespetcher = ({
   enabled,
   page,
 }: {
@@ -9,10 +9,10 @@ export const useGetDevices = ({
   page?: number;
 }) => {
   return useQuery(
-    ["get-devices-api"],
+    ["get-dispetcher"],
     async () => {
       const { data } = await request.get(
-        `/list-devices-api/`,
+        `/accounts/users-api/`,
         {
           params: { page },
         }

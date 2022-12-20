@@ -4,8 +4,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { Button, CustomInput } from "../../components";
 import { Container } from "@mantine/core";
 import { useForm } from "@mantine/form";
+import { IconCheck, IconX } from "@tabler/icons";
 import { useLoginMutation } from "../../hooks/mutation";
 import { setCookie } from "../../utils/cookie";
+import { showNotification } from "@mantine/notifications";
 
 function Login() {
   const navigate = useNavigate();
@@ -39,6 +41,12 @@ function Login() {
       })
       .catch((err) => {
         console.log(err);
+        showNotification({
+          title: "Error",
+          message: "",
+          color: 'red',
+          icon: <IconX />,
+        });
       });
   };
 

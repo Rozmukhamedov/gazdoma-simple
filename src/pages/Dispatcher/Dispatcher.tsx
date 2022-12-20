@@ -3,17 +3,20 @@ import React from "react";
 import { Container, Grid } from "@mantine/core";
 import { DispatTable } from "../../containers";
 import { Button } from "../../components";
+import { useGetDespetcher } from "../../hooks/query";
 
 function Dispatcher() {
+  const data = useGetDespetcher({})
+  console.log(data.data)
   return (
     <Container size={"xl"}>
       <div className="dispatcher">
         <h1>Диспетчер</h1>
         <Grid>
-          <Grid.Col span={12} md={8}>
-            <DispatTable />
+          <Grid.Col span={12} md={12}>
+            <DispatTable data={data.data}/>
           </Grid.Col>
-          <Grid.Col span={12} md={4}>
+          {/* <Grid.Col span={12} md={4}>
             <div className="notifications">
             <h3>Уведомления</h3>
             <div className="notifications__card">
@@ -22,7 +25,7 @@ function Dispatcher() {
               <Button>Отправить владельцу СМС</Button>
             </div>
             </div>
-          </Grid.Col>
+          </Grid.Col> */}
         </Grid>
       </div>
     </Container>

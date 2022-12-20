@@ -44,16 +44,16 @@
 }
 
 @media (max-width: 768px) {
-    .dispatch__table thead tr .name{
+    /* .dispatch__table thead tr .name{
         display: none;
     }
     .dispatch__table thead tr .edit{
         display: none;
-    }
+    } */
     .dispatch__table thead tr .disabled{
         display: none;
     }
-    .dispatch__table thead tr .dowload{
+    /* .dispatch__table thead tr .dowload{
         display: none;
     }
     .dispatch__table tbody tr .name{
@@ -61,11 +61,11 @@
     }
     .dispatch__table tbody tr .edit{
         display: none;
-    }
+    } */
     .dispatch__table tbody tr .disabled{
         display: none;
     }
-    .dispatch__table tbody tr .dowload{
+    /* .dispatch__table tbody tr .dowload{
         display: none;
-    }
+    } */
 }

@@ -5,3 +5,4 @@ export { default as Scheme } from "./Scheme";
 export { default as Layout } from "./Layout";
 export { default as Logout } from "./Logout";
 export { default as DispatTable } from "./DispatTable";
+export { default as EquipmentTable } from "./EquipmentTable";

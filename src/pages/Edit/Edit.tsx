@@ -21,9 +21,9 @@ function Edit() {
   return (
     <Container size={"xl"}>
       <div className="login">
-        <h1>Вход или регистрация</h1>
+        <h1>Личный кабинет</h1>
         <form className="login__form">
-          <h4>Вход</h4>
+          <h4>Редактировать информацию</h4>
           <CustomInput form={form} name={"login"} placeholder={"Логин"} />
           <CustomInput form={form} name={"register"} placeholder={"Пароль"} />
           <Button className="login__btn" type={"submit"}>
