@@ -1,3 +1,3 @@
-import EquipmentTable from "./DispatTable";
+import EquipmentTable from "./EquipmentTable";
 
 export default EquipmentTable;
