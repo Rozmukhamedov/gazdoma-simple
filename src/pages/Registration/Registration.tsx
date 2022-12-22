@@ -34,7 +34,7 @@ function Registration() {
   });
 
   const onSubmit = (e: any) => {
-    const data = {
+    const data:any = {
       first_name: e.name,
       last_name: e.name,
       middle_name: e.name,

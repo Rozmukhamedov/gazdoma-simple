@@ -2,8 +2,8 @@ import "./style.css";
 import React from "react";
 import { Input, Switch, Table } from "@mantine/core";
 import { IconSearch } from "@tabler/icons";
-import { ReactComponent as EditIcon } from "../../assets/images/edit_icon.svg";
-import { ReactComponent as UploadIcon } from "../../assets/images/upload.svg";
+// import { ReactComponent as EditIcon } from "../../assets/images/edit_icon.svg";
+// import { ReactComponent as UploadIcon } from "../../assets/images/upload.svg";
 
 function DispatTable({ data }: any) {
   return (

@@ -26,7 +26,7 @@ function Login() {
   });
 
   const onSubmit = (e: any) => {
-    const data = {
+    const data:any = {
       phone_number: e.login,
       password: e.password,
     };
