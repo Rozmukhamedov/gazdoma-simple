@@ -7,7 +7,7 @@ import { useGetDespetcher } from "../../hooks/query";
 
 function Dispatcher() {
   const data = useGetDespetcher({})
-  console.log(data.data)
+  
   return (
     <Container size={"xl"}>
       <div className="dispatcher">

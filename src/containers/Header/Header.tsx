@@ -2,13 +2,14 @@ import "./style.css";
 import React, { useState } from "react";
 import Logo from "../../assets/images/logo.svg";
 import { Burger, Container, Drawer, Group } from "@mantine/core";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "../../components";
 
 function Header() {
   const [opened, setOpened] = useState(false);
   const title = opened ? "Close navigation" : "Open navigation";
-
+  const location = useLocation();
+  console.log(location.pathname);
   return (
     <>
       <div className="header">
@@ -16,16 +17,16 @@ function Header() {
           <div className="header__flex">
             <img src={Logo} alt="Клапан PRO" />
             <ul>
-              <li>
+              <li className={location.pathname === "/" ? "active" : ""}>
                 <Link to={"/"}>Главная</Link>
               </li>
-              <li>
+              <li className={location.pathname === "/profile" ? "active" : ""}>
                 <Link to={"/profile"}>Личный кабинет</Link>
               </li>
-              <li>
+              <li className={location.pathname === "/equipment" ? "active" : ""}>
                 <Link to={"/equipment"}>Мое оборудование</Link>
               </li>
-              <li>
+              <li className={location.pathname === "/dispatcher" ? "active" : ""}>
                 <Link to={"/dispatcher"}>Подключение</Link>
               </li>
             </ul>
@@ -44,16 +45,24 @@ function Header() {
             >
               <ul>
                 <li>
-                  <Link  onClick={() => setOpened(false)} to={"/"}>Главная</Link>
+                  <Link onClick={() => setOpened(false)} to={"/"}>
+                    Главная
+                  </Link>
                 </li>
                 <li>
-                  <Link  onClick={() => setOpened(false)} to={"/profile"}>Личный кабинет</Link>
+                  <Link onClick={() => setOpened(false)} to={"/profile"}>
+                    Личный кабинет
+                  </Link>
                 </li>
                 <li>
-                  <Link  onClick={() => setOpened(false)} to={"/equipment"}>Мое оборудование</Link>
+                  <Link onClick={() => setOpened(false)} to={"/equipment"}>
+                    Мое оборудование
+                  </Link>
                 </li>
                 <li>
-                  <Link  onClick={() => setOpened(false)} to={"/dispatcher"}>Подключение</Link>
+                  <Link onClick={() => setOpened(false)} to={"/dispatcher"}>
+                    Подключение
+                  </Link>
                 </li>
               </ul>
             </Drawer>

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { getCookie, removeCookie } from "../../utils/cookie";
+import { getCookie, removeCookie, setCookie } from "../../utils/cookie";
 
 export const requestWithoutAuth = axios.create({
   baseURL: "http://128.199.31.140:8444",
@@ -20,10 +20,21 @@ request.interceptors.response.use(
   },
   (error) => {
     if (error.response.status === 401) {
-      removeCookie("token");
-      removeCookie("user");
+      // removeCookie("token");
+      // removeCookie("user");
       // window.location.reload();
       // window.location.pathname = "/";
+      axios
+        .post("http://128.199.31.140:8444/api/token/refresh/", {
+          refresh: getCookie("refresh_token"),
+        })
+        .then((response: any) => {
+          setCookie("token", response?.data?.access);
+        })
+        .catch((error) => {
+          removeCookie("token");
+          removeCookie("user");
+        });
     }
     return Promise.reject(error);
   }

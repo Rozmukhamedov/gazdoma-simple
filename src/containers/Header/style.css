@@ -25,6 +25,10 @@
     padding: 20px;
 }
 
+.header .header__flex ul .active {
+    border-bottom: 1px solid #6E89D2;
+}
+
 .header .header__flex ul li a {
     font-family: 'Roboto';
     font-style: normal;
