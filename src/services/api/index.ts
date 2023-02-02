@@ -2,12 +2,12 @@ import axios from "axios";
 import { getCookie, removeCookie, setCookie } from "../../utils/cookie";
 
 export const requestWithoutAuth = axios.create({
-  baseURL: "http://128.199.31.140:8444",
+  baseURL: "https://gashome.info",
   timeout: 30000,
 });
 
 export const request = axios.create({
-  baseURL: "http://128.199.31.140:8444",
+  baseURL: "https://gashome.info",
   timeout: 20000,
   headers: {
     Authorization: `Bearer ${getCookie("token")}`,
@@ -25,7 +25,7 @@ request.interceptors.response.use(
       // window.location.reload();
       // window.location.pathname = "/";
       axios
-        .post("http://128.199.31.140:8444/api/token/refresh/", {
+        .post("https://gashome.info/api/token/refresh/", {
           refresh: getCookie("refresh_token"),
         })
         .then((response: any) => {
