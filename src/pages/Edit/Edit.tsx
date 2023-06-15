@@ -23,15 +23,15 @@ function Edit() {
       <div className="login">
         <h1>Личный кабинет</h1>
         <form className="login__form">
-          <h4>Редактировать информацию</h4>
-          <CustomInput form={form} name={"login"} placeholder={"Логин"} />
+          <h4>Редактировать</h4>
+          <CustomInput form={form} name={"login"} placeholder={"Пароль"} />
           <CustomInput form={form} name={"register"} placeholder={"Пароль"} />
           <Button className="login__btn" type={"submit"}>
-            Войти
+            Изменить
           </Button>
-          <Button className="btn" type={"button"}>
+          {/* <Button className="btn" type={"button"}>
             <Link to={"/register"}>Регистрация</Link>
-          </Button>
+          </Button> */}
         </form>
       </div>
     </Container>

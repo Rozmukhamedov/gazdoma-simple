@@ -9,7 +9,7 @@ function Header() {
   const [opened, setOpened] = useState(false);
   const title = opened ? "Close navigation" : "Open navigation";
   const location = useLocation();
-  console.log(location.pathname);
+  
   return (
     <>
       <div className="header">

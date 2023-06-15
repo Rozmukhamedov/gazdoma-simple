@@ -40,7 +40,6 @@ function Login() {
         window.location.reload();
       })
       .catch((err) => {
-        console.log(err);
         showNotification({
           title: "Error",
           message: "",

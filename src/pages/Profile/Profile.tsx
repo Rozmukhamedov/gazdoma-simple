@@ -20,7 +20,7 @@ function Profile() {
           <h5><Link to={`/profile/edit/${getUser.data?.id}/`}>Редактировать информацию</Link></h5>
           <h5><Link to={`/profile/edit/${getUser.data?.id}/`}>Изменить пароль</Link></h5>
           <Button className="btn" type={"button"} onClick={() => setOpened(prev => !prev)}>
-            Выйти
+            Изменить
           </Button>
         </div>
       </div>

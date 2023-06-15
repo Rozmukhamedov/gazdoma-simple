@@ -91,7 +91,7 @@ function EquipmentTable({ data }: any) {
                       justifyContent: "space-between",
                     }}
                   >
-                    <div className="valves">ОУ—{item?.ch}</div>{" "}
+                    <div className="valves">{item.name}</div>{" "}
                     <div className="update">
                       <div className={`btn ${colorUpdate(item?.updated)}`}>
                         <p>{getHour(item?.updated)}</p>
@@ -151,7 +151,7 @@ function EquipmentTable({ data }: any) {
             <tbody>
               {data?.map((item: any) => (
                 <tr key={item?.id}>
-                  <td className="valves">ОУ—{item?.ch}</td>
+                  <td className="valves">{item.name}</td>
                   <td className="pressure">{item?.co} бар.</td>
                   <td className={`charge ${colorCharge(item?.charge)}`}>
                     {item?.charge}%
