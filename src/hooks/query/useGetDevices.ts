@@ -12,7 +12,7 @@ export const useGetDevices = ({
     ["get-devices-api"],
     async () => {
       const { data } = await request.get(
-        `/list-devices-api/`,
+        `/user-devices-api/`,
         {
           params: { page },
         }
